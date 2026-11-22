@@ -483,8 +483,17 @@ $('codeBackdrop').addEventListener('click', e=>{ if(e.target===$('codeBackdrop')
 $('codeInput').addEventListener('input', ()=>{ $('codeUpdateBtn').style.display = $('codeInput').value===ADMIN_PASS ? 'block' : 'none'; $('codeMsg').textContent=''; });
 $('codeInput').addEventListener('keydown', e=>{ if(e.key==='Enter' && $('codeInput').value===ADMIN_PASS) doCodeUpdate(); });
 $('codeUpdateBtn').onclick = doCodeUpdate;
+function fmtChecked(iso){ return cap(new Intl.DateTimeFormat('es-MX',{timeZone:TZ,weekday:'long',day:'numeric',month:'long',hour:'numeric',minute:'2-digit'}).format(new Date(iso))); }
+function nextCheck(){
+  const slots=[[4,0],[7,0],[8,0],[11,0],[11,59]];
+  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());
+  const now=(+parts.find(p=>p.type==='hour').value)*60 + (+parts.find(p=>p.type==='minute').value);
+  for(const [sh,sm] of slots){ if(sh*60+sm>now) return 'hoy a las ' + String(sh).padStart(2,'0') + ':' + String(sm).padStart(2,'0'); }
+  return 'mañana a las 04:00';
+}
 async function doCodeUpdate(){
-  const msg = $('codeMsg'); msg.textContent = 'Actualizando…';
+  const msg = $('codeMsg'); msg.textContent = 'Revisando si hay un menú nuevo…';
+  const prevLatest = menus.length ? menus[menus.length-1].menuDate : '';
   try{
     const res = await fetch('menu.json',{cache:'no-store'});
     if(!res.ok) throw new Error('http '+res.status);
@@ -492,8 +501,16 @@ async function doCodeUpdate(){
     menuData = d; menus = d.menus || [];
     const latest = menus.length ? menus[menus.length-1] : null;
     render();
-    msg.textContent = 'Menú actualizado. El menú más reciente publicado es el del ' + (latest ? latest.fechaLabel : '—') + '.';
-  }catch(e){ msg.textContent = 'No se pudo actualizar. Revisa tu conexión e inténtalo de nuevo.'; }
+    const last = menuData.lastCheckedAt ? fmtChecked(menuData.lastCheckedAt) : null;
+    const errNote = (menuData.lastStatus==='error' && menuData.lastMessage) ? ' ' + menuData.lastMessage : '';
+    if(latest && latest.menuDate > prevLatest){
+      msg.textContent = '¡Hay menú nuevo! Ya está publicado el del ' + latest.fechaLabel + '.';
+    }else if(latest && latest.menuDate === todayStr(0)){
+      msg.textContent = 'Ya está al día. El menú de hoy ya está publicado.' + (last ? ' Última revisión de Instagram: ' + last + '.' : '') + errNote;
+    }else{
+      msg.textContent = 'No hay menú nuevo publicado.' + (last ? ' Última revisión de Instagram: ' + last + '.' : '') + ' Próxima revisión: ' + nextCheck() + '.' + errNote + ' Si quieres revisar Instagram en este momento, pídemelo en el chat.';
+    }
+  }catch(e){ msg.textContent = 'No se pudo revisar. Revisa tu conexión e inténtalo de nuevo.'; }
 }
 /* load */
 function loadMenus(attempt){
