@@ -501,7 +501,7 @@ $('adminGo').onclick = ()=>{
   }
 };
 /* load */
-function loadMenus(){
+function loadMenus(attempt){
   fetch('menu.json',{cache:'no-store'}).then(r=>{ if(!r.ok) throw new Error('http '+r.status); return r.json(); }).then(data=>{
   menuData = data;
   menus = data.menus || [];
@@ -515,6 +515,7 @@ function loadMenus(){
   }
   render();
 }).catch(()=>{
+  if(!attempt){ setTimeout(()=>loadMenus(1), 1500); return; }
   $('menu').innerHTML = '<div class="empty"><p>No se pudo cargar el menú.</p><button class="retry" onclick="loadMenus()">Reintentar</button></div>';
 });
 }
