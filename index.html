@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menú del día — Universidad Autónoma Chapingo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Poppins,system-ui,sans-serif;background:#f4f7fb;color:#1c2733}
+  header{background:#1565c0;color:#fff;text-align:center;padding:28px 16px 20px}
+  header h1{margin:0;font-size:1.5rem}
+  header p{margin:6px 0 0;opacity:.9}
+  main{max-width:680px;margin:0 auto;padding:16px}
+  .days{display:flex;gap:8px;justify-content:center;margin:4px 0 16px;flex-wrap:wrap}
+  .days button{border:2px solid #1565c0;background:#fff;color:#1565c0;border-radius:999px;padding:8px 18px;font-family:inherit;font-weight:600;cursor:pointer}
+  .days button.active{background:#1565c0;color:#fff}
+  .date{ text-align:center;font-weight:600;color:#1565c0;margin:0 0 16px}
+  section{background:#fff;border-radius:14px;padding:16px 18px;margin-bottom:14px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  section h2{margin:0 0 4px;font-size:1.15rem}
+  section.desayuno h2{color:#b45309}
+  section.comida h2{color:#15803d}
+  section.cena h2{color:#1d4ed8}
+  .horario{color:#64748b;font-size:.9rem;margin:0 0 10px}
+  ul{margin:0;padding-left:20px}
+  li{margin:3px 0}
+  li b{font-weight:700}
+  .empty,.loading{text-align:center;color:#64748b;padding:32px 0}
+  footer{max-width:680px;margin:0 auto;padding:0 16px 32px;text-align:center;color:#64748b;font-size:.85rem}
+  footer a{color:#1565c0}
+</style>
+</head>
+<body>
+<header>
+  <h1>Menú del día</h1>
+  <p>Universidad Autónoma Chapingo</p>
+</header>
+<main>
+  <div class="days" id="days"></div>
+  <p class="date" id="dateLabel"></p>
+  <div id="menu"><p class="loading">Cargando menú…</p></div>
+</main>
+<footer>
+  <p id="updated"></p>
+  <p>Fuente: <a href="https://www.instagram.com/comisiondealimentacionuach" target="_blank" rel="noopener">@comisiondealimentacionuach</a> en Instagram. El menú está sujeto a lo que se publique ahí.</p>
+  <p>Página desarrollada por Diego. Proyecto independiente sin fines de lucro y sin afiliación oficial con la universidad. Solo muestra el menú que la comisión publica en su Instagram para que sea más fácil consultarlo.</p>
+</footer>
+<script>
+const TZ = 'America/Mexico_City';
+let menus = [];
+let selected = null;
+
+function todayStr(offset){
+  const d = new Date();
+  const parts = new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d);
+  const y = +parts.find(p=>p.type==='year').value, m = +parts.find(p=>p.type==='month').value - 1, day = +parts.find(p=>p.type==='day').value;
+  const dt = new Date(Date.UTC(y,m,day));
+  dt.setUTCDate(dt.getUTCDate()+offset);
+  return dt.toISOString().slice(0,10);
+}
+function label(dateStr){
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(Date.UTC(y,m-1,d));
+  return new Intl.DateTimeFormat('es-MX',{timeZone:'UTC',weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(dt);
+}
+function section(cls, title, meal){
+  if(!meal) return '';
+  const items = meal.items.map((it,i)=>`<li>${i===0?'<b>'+it+'</b>':it}</li>`).join('');
+  return `<section class="${cls}"><h2>${title}</h2><p class="horario">${meal.horario}</p><ul>${items}</ul></section>`;
+}
+function render(){
+  const box = document.getElementById('menu');
+  const m = menus.find(x=>x.menuDate===selected);
+  document.getElementById('dateLabel').textContent = label(selected);
+  if(!m){
+    box.innerHTML = `<p class="empty">Aún no se ha publicado el menú de este día en el Instagram de la comisión.<br>Estaremos pendientes para actualizarlo en cuanto se publique.</p>`;
+    return;
+  }
+  box.innerHTML = section('desayuno','Desayuno',m.desayuno) + section('comida','Comida',m.comida) + section('cena','Cena',m.cena)
+    + `<p style="text-align:center"><a href="${m.postUrl}" target="_blank" rel="noopener">Ver la publicación en Instagram</a></p>`;
+}
+function setDay(offset, btn){
+  selected = todayStr(offset);
+  document.querySelectorAll('#days button').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  render();
+}
+fetch('menu.json').then(r=>r.json()).then(data=>{
+  menus = data.menus || [];
+  document.getElementById('updated').textContent = 'Última actualización: ' + (data.updatedAt || '');
+  const days = document.getElementById('days');
+  [['Ayer',-1],['Hoy',0],['Mañana',1]].forEach(([name,off])=>{
+    const b = document.createElement('button');
+    b.textContent = name;
+    b.onclick = ()=>setDay(off,b);
+    if(off===0) b.classList.add('active');
+    days.appendChild(b);
+  });
+  selected = todayStr(0);
+  render();
+}).catch(()=>{
+  document.getElementById('menu').innerHTML = '<p class="empty">No se pudo cargar el menú. Inténtalo más tarde.</p>';
+});
+</script>
+</body>
+</html>
