@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-22 00:35 America/Mexico_City",
-  "lastCheckedAt": "2026-11-22T06:35:20.450Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-22 05:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-22T10:50:36.356Z",
+  "lastStatus": "ok",
+  "lastMessage": "Menú nuevo: domingo 22 de noviembre de 2026",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -672,6 +672,50 @@
           "fruta",
           "café",
           "leche"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-22",
+      "fechaLabel": "Domingo 22 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgCLuR-RLte/",
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "huevo con salchicha",
+          "salsa roja",
+          "frijoles refritos",
+          "tortilla",
+          "pan",
+          "fruta",
+          "café",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "pollo a la jardinera",
+          "arroz rojo",
+          "frijoles de la olla",
+          "churritos de amaranto al chipotle",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "tacos dorados de papa con chorizo",
+          "queso",
+          "crema",
+          "lechuga",
+          "salsa verde",
+          "frijoles refritos",
+          "cereal",
+          "fruta",
+          "leche",
+          "café"
         ]
       }
     }
