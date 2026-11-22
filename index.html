@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#1E5B3E">
 <title>Menú del día — Universidad Autónoma Chapingo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
   :root{
     --bg:#FBFAF7; --surface:#FFFFFF; --text:#1C2420; --dim:#68736C; --border:#E4E1D8;
     --accent:#1E4F8A; --accent-soft:#E2EBF7; --warm:#D97706; --radius:12px;
@@ -115,12 +114,12 @@
   .cal-month{font-size:16px;font-weight:600;margin:18px 0 8px;text-transform:capitalize}
   .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
   .cal-grid .dow{font-size:12px;font-weight:600;color:var(--dim);padding:4px 0}
-  .cal-grid button{border:none;background:transparent;color:var(--text);font-family:inherit;font-size:16px;padding:0;aspect-ratio:1;border-radius:50%;cursor:pointer;position:relative;display:flex;align-items:center;justify-content:center}
+  .cal-grid button{border:none;background:transparent;color:var(--text);font-family:inherit;font-size:16px;font-weight:500;padding:0;aspect-ratio:1;border-radius:50%;cursor:pointer;position:relative;display:flex;align-items:center;justify-content:center}
   .cal-grid button.has::after{content:"";position:absolute;bottom:6px;left:50%;transform:translateX(-50%);height:4px;width:4px;border-radius:50%;background:var(--accent)}
   .cal-grid button.today{box-shadow:inset 0 0 0 2px var(--accent)}
   .cal-grid button.sel{background:var(--accent);color:#fff;font-weight:700}
   .cal-grid button.sel::after{background:#fff}
-  .cal-grid button:disabled{color:var(--dim);opacity:.4;cursor:not-allowed}
+  .cal-grid button:disabled{color:var(--dim);opacity:.4;cursor:not-allowed;font-weight:400}
   .cal-note{font-size:14px;color:var(--dim);margin-top:14px}
   .steps{font-size:16px;line-height:1.7}
   .steps ol{margin:8px 0;padding-left:22px}
@@ -142,7 +141,7 @@
   <div class="date-row">
     <span class="date-pill" id="dateLabel"></span>
     <button class="cal-btn" id="calBtn" aria-label="Elegir día">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/><circle cx="8.5" cy="14.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="12" cy="14.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="15.5" cy="14.5" r="0.6" fill="currentColor" stroke="none"/></svg>
     </button>
   </div>
 
@@ -156,17 +155,17 @@
 
   <footer>
     <p id="updated"></p>
-    <p>Fuente: <a href="https://www.instagram.com/comisiondealimentacionuach" target="_blank" rel="noopener">@comisiondealimentacionuach</a> en Instagram. El menú está sujeto a las publicaciones de la comisión, a lo que se publique en su Instagram.</p>
+    <p>Fuente: <a href="https://www.instagram.com/comisiondealimentacionuach" target="_blank" rel="noopener">@comisiondealimentacionuach</a> en Instagram. El menú está sujeto a las publicaciones de la comisión: aquí solo aparece lo que se publique, y si un día no se publica o se corrige un menú, esta página refleja lo que se haya publicado.</p>
     <div class="foot-btns">
       <button class="btn-accent-soft" id="addHomeBtn">＋ Agregar a pantalla de inicio</button>
-      <button class="btn-surface" id="settingsBtn">⚙️ Configuración</button>
-      <button class="btn-accent-soft" id="shareMenuBtn">↗️ Compartir menú</button>
+      <button class="btn-surface" id="settingsBtn" aria-label="Abrir configuración"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Configuración</button>
+      <button class="btn-accent-soft" id="shareMenuBtn" aria-label="Compartir solo este menú"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg> Compartir menú</button>
     </div>
     <div class="share-strip">
       <p>Comparte la página para que más personas la conozcan.</p>
-      <button id="sharePageBtn">↗ Compartir</button>
+      <button id="sharePageBtn" aria-label="Compartir la página"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg> Compartir</button>
     </div>
-    <p class="share-note" id="shareNote" style="display:none">Este dispositivo no permite compartir desde aquí. Copia el enlace de la barra de direcciones.</p>
+    <p class="share-note" id="shareNote" style="display:none">Este navegador no puede compartir desde aquí. Puedes compartir la página desde el menú de tu navegador.</p>
   </footer>
 </main>
 
@@ -180,7 +179,7 @@
 </div>
 
 <div class="sheet" id="settingsSheet">
-  <div class="sheet-head"><h3>⚙️ Configuración</h3><button class="x" data-close>✕</button></div>
+  <div class="sheet-head"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg> Configuración</h3><button class="x" data-close>✕</button></div>
   <div class="tabs" id="settingsTabs">
     <button data-tab="ajustes" class="active">Ajustes</button>
     <button data-tab="apariencia">Apariencia</button>
@@ -197,9 +196,9 @@
     <p class="sec-title">Apariencia</p>
     <p class="sec-label">Modo de la página</p>
     <div class="seg" id="themeRow">
-      <button data-theme="light">☀️ Claro</button>
-      <button data-theme="dark">🌙 Oscuro</button>
-      <button data-theme="auto">◐ Automático</button>
+      <button data-theme="light"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg> Claro</button>
+      <button data-theme="dark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> Oscuro</button>
+      <button data-theme="auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" stroke="none"/></svg> Automático</button>
     </div>
     <p class="sec-label">Elige un color</p>
     <div class="chips" id="swatches"></div>
@@ -208,15 +207,15 @@
     <p class="sec-title">Fuentes</p>
     <p class="sec-label">Páginas oficiales</p>
     <div class="links">
-      <a href="https://www.instagram.com/uachapingoficial?fqnt=MzVhazFuczMzM3Fj" target="_blank" rel="noopener"><span class="ic ig">📷</span><span><span class="t1">Universidad Autónoma Chapingo</span><br><span class="t2">@uachapingoficial · Instagram</span></span><span class="arr">→</span></a>
-      <a href="https://www.instagram.com/comisiondealimentacionuach?gwpx=ZHl0bjgzNDcxeXE4" target="_blank" rel="noopener"><span class="ic ig">📷</span><span><span class="t1">Comisión de Alimentación UACh</span><br><span class="t2">@comisiondealimentacionuach · Instagram</span></span><span class="arr">→</span></a>
-      <a href="https://whatsapp.com/channel/0029Vb7Hl3U4inonqLH3ms2V" target="_blank" rel="noopener"><span class="ic wa">💬</span><span><span class="t1">Canal de WhatsApp de la Comisión</span><br><span class="t2">WhatsApp</span></span><span class="arr">→</span></a>
-      <a href="https://whatsapp.com/channel/0029Va9MYRD9MF8yC9NvBG0J" target="_blank" rel="noopener"><span class="ic wa">💬</span><span><span class="t1">Canal de WhatsApp UACh - OFICIAL (2023-2027)</span><br><span class="t2">WhatsApp</span></span><span class="arr">→</span></a>
+      <a href="https://www.instagram.com/uachapingoficial?fqnt=MzVhazFuczMzM3Fj" target="_blank" rel="noopener"><span class="ic ig"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.7" fill="currentColor" stroke="none"/></svg></span><span><span class="t1">Universidad Autónoma Chapingo</span><br><span class="t2">@uachapingoficial en Instagram</span></span><span class="arr">→</span></a>
+      <a href="https://www.instagram.com/comisiondealimentacionuach?gwpx=ZHl0bjgzNDcxeXE4" target="_blank" rel="noopener"><span class="ic ig"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.7" fill="currentColor" stroke="none"/></svg></span><span><span class="t1">Comisión de Alimentación UACh</span><br><span class="t2">@comisiondealimentacionuach en Instagram</span></span><span class="arr">→</span></a>
+      <a href="https://whatsapp.com/channel/0029Vb7Hl3U4inonqLH3ms2V" target="_blank" rel="noopener"><span class="ic wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/><path d="M9.2 8.2c.3-.7 1.3-.6 1.6.1l.4 1c.1.3 0 .7-.2 1l-.4.4a5.6 5.6 0 0 0 2.7 2.7l.4-.4c.3-.2.7-.3 1-.2l1 .4c.7.3.8 1.3.1 1.6-.8.4-1.8.4-2.7.1a10.8 10.8 0 0 1-5-5c-.3-.9-.3-1.9.1-2.7z" fill="currentColor" stroke="none"/></svg></span><span><span class="t1">Comisión de Alimentación UACh</span><br><span class="t2">Canal de WhatsApp de la comisión</span></span><span class="arr">→</span></a>
+      <a href="https://whatsapp.com/channel/0029Va9MYRD9MF8yC9NvBG0J" target="_blank" rel="noopener"><span class="ic wa"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/><path d="M9.2 8.2c.3-.7 1.3-.6 1.6.1l.4 1c.1.3 0 .7-.2 1l-.4.4a5.6 5.6 0 0 0 2.7 2.7l.4-.4c.3-.2.7-.3 1-.2l1 .4c.7.3.8 1.3.1 1.6-.8.4-1.8.4-2.7.1a10.8 10.8 0 0 1-5-5c-.3-.9-.3-1.9.1-2.7z" fill="currentColor" stroke="none"/></svg></span><span><span class="t1">Universidad Autónoma Chapingo</span><br><span class="t2">Canal de WhatsApp oficial (2023-2027)</span></span><span class="arr">→</span></a>
     </div>
     <div class="personal">
       <p><b>Página desarrollada por Diego.</b></p>
-      <p style="margin-top:6px">Proyecto independiente y sin fines de lucro, sin afiliación oficial con la universidad. Solo muestra el menú que la comisión publica en su Instagram para que sea más fácil consultarlo.</p>
-      <p style="margin-top:10px"><a href="https://www.instagram.com/diegnneri" target="_blank" rel="noopener">📷 @diegnneri</a></p>
+      <p style="margin-top:6px">Proyecto independiente y sin fines de lucro, sin afiliación oficial con la Universidad Autónoma Chapingo ni con la Comisión de Alimentación: solo muestra el menú que la comisión publica en su Instagram para que sea más fácil consultarlo.</p>
+      <div class="links" style="margin-top:10px"><a href="https://www.instagram.com/diegnneri" target="_blank" rel="noopener"><span class="ic ig"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="0.7" fill="currentColor" stroke="none"/></svg></span><span><span class="t1">@diegnneri</span><br><span class="t2">Instagram</span></span><span class="arr">→</span></a></div>
       <p style="margin-top:6px">Para dudas, aclaraciones o recomendaciones, contáctate conmigo por Instagram.</p>
     </div>
   </div>
@@ -310,13 +309,17 @@ function render(){
   const box = $('menu');
   const m = menus.find(x=>x.menuDate===selected);
   $('dateLabel').textContent = label(selected);
-  $('updated').innerHTML = m
-    ? `Última revisión: ${lastUpdated} · <a href="${m.postUrl}" target="_blank" rel="noopener">Ver la publicación de este menú</a>`
-    : `Última revisión: ${lastUpdated}`;
+  let reviewText;
+  if (data.lastStatus === 'revisando') reviewText = 'Revisando si hay un menú nuevo…';
+  else if (data.lastStatus === 'error' && data.lastMessage) reviewText = data.lastMessage;
+  else if (data.lastCheckedAt) reviewText = 'Última revisión: ' + cap(new Intl.DateTimeFormat('es-MX',{timeZone:TZ,weekday:'long',day:'numeric',month:'long',hour:'numeric',minute:'2-digit'}).format(new Date(data.lastCheckedAt))) + '.';
+  else reviewText = 'La página se actualiza sola cuando la comisión publica un menú nuevo.';
+  $('updated').innerHTML = reviewText + (m ? ` <a href="${m.postUrl}" target="_blank" rel="noopener">Ver la publicación de este menú</a>` : '');
   const off = Math.round((parseDate(selected) - parseDate(todayStr(0))) / 86400000);
   $('days').style.display = off < -1 ? 'none' : 'grid';
   document.querySelectorAll('#days button').forEach(b=>b.classList.toggle('active', b.dataset.date===selected));
   if(!m){
+    $('shareMenuBtn').style.display = 'none';
     const isTomorrow = selected === todayStr(1);
     box.innerHTML = `<div class="empty"><p>El menú de ${isTomorrow?'mañana':'hoy'} aún no se sube a la página de Instagram de la comisión.</p><p>Estaremos pendientes para actualizarlo en cuanto lo publiquen.</p></div>`;
     $('jumpBar').style.display = 'none';
@@ -327,6 +330,7 @@ function render(){
     + section('cena','sec-cena','Cena',m.cena,'cena');
   const showJump = store.get('menu-del-dia-jump-bar','1') === '1';
   $('jumpBar').style.display = showJump ? 'flex' : 'none';
+  $('shareMenuBtn').style.display = m ? 'inline-flex' : 'none';
   const cur = nowMeal();
   ['desayuno','comida','cena'].forEach(k=>{ $('now-'+k).style.display = (k===cur) ? 'inline' : 'none'; });
 }
@@ -341,7 +345,7 @@ async function shareText(title, text, url){
   if(navigator.share){
     try{ await navigator.share({title, text, url}); return; }catch(e){ if(e && e.name==='AbortError') return; }
   }
-  try{ await navigator.clipboard.writeText(text + (url ? '\n'+url : '')); alert('Copiado al portapapeles.'); }
+  try{ await navigator.clipboard.writeText(text + (url ? '\n'+url : '')); alert('El menú se copió; pégalo donde quieras compartirlo.'); }
   catch(e){ alert('No se pudo compartir desde aquí.'); }
 }
 function openSheet(id){ closeSheets(); $(id).classList.add('open'); $('overlay').classList.add('open'); }
@@ -446,11 +450,16 @@ $('autoInstallBtn').onclick = async ()=>{
   else alert('En este navegador no está disponible la instalación automática. Sigue los pasos de arriba.');
 };
 /* load */
-let lastUpdated = '';
 fetch('menu.json').then(r=>r.json()).then(data=>{
   menus = data.menus || [];
-  lastUpdated = data.updatedAt || '';
   selected = todayStr(0);
+  if (matchMedia('(display-mode: standalone)').matches) {
+    const b = $('addHomeBtn');
+    const p = document.createElement('p');
+    p.textContent = '✓ Ya tienes el menú en tu pantalla de inicio.';
+    p.style.cssText = 'font-weight:500;color:var(--accent)';
+    b.replaceWith(p);
+  }
   applyTheme();
   $('jumpToggle').classList.toggle('on', store.get('menu-del-dia-jump-bar','1')==='1');
   render();

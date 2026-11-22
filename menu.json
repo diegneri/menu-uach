@@ -1,126 +1,679 @@
 {
   "updatedAt": "2026-11-21 23:30 America/Mexico_City",
+  "lastCheckedAt": "2026-11-22T02:54:21.708Z",
+  "lastStatus": "error",
+  "lastMessage": "La última revisión no terminó; se reintentará en la próxima revisión programada.",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
       "menuDate": "2026-11-07",
       "fechaLabel": "Sábado 07 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DfbenvMxZsN/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["pan francés", "mermelada", "totopos", "frijoles refritos", "yogur", "amaranto", "gelatina"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["cerdo en salsa BBQ", "arroz blanco", "puré de papa", "frijoles refritos", "ensalada de espinaca con zanahoria", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["tortitas de pollo en salsa de morita con calabaza", "tortilla", "macarrones rojos", "frijoles refritos", "Rocko", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "pan francés",
+          "mermelada",
+          "totopos",
+          "frijoles refritos",
+          "yogur",
+          "amaranto",
+          "gelatina"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "cerdo en salsa BBQ",
+          "arroz blanco",
+          "puré de papa",
+          "frijoles refritos",
+          "ensalada de espinaca con zanahoria",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "tortitas de pollo en salsa de morita con calabaza",
+          "tortilla",
+          "macarrones rojos",
+          "frijoles refritos",
+          "Rocko",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-08",
       "fechaLabel": "Domingo 08 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Dfd7ZotRtFJ/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["chilaquiles rojos con pollo", "queso", "crema", "frijoles refritos", "baguette", "yogur", "fruta", "malteada de chocolate", "té"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["pechuga de pollo empanizada", "espagueti rojo", "ensalada", "guacamole", "limón", "frijoles", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["pozole rojo", "lechuga", "rábano", "limón", "crema", "chile piquín", "frijoles", "tostada", "gelatina", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "chilaquiles rojos con pollo",
+          "queso",
+          "crema",
+          "frijoles refritos",
+          "baguette",
+          "yogur",
+          "fruta",
+          "malteada de chocolate",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "pechuga de pollo empanizada",
+          "espagueti rojo",
+          "ensalada",
+          "guacamole",
+          "limón",
+          "frijoles",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "pozole rojo",
+          "lechuga",
+          "rábano",
+          "limón",
+          "crema",
+          "chile piquín",
+          "frijoles",
+          "tostada",
+          "gelatina",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-09",
       "fechaLabel": "Lunes 09 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Dfgj_m_x6Rs/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["sincronizadas de maíz", "frijoles refritos", "aguacate", "pico de gallo", "cereal", "fruta", "café", "leche"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["bistec de res a la mexicana", "arroz rojo", "frijoles de la olla", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["hot dog", "espagueti rojo", "jitomate", "cebolla", "mayonesa", "cátsup", "chiles en escabeche picados", "papas Paps", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "sincronizadas de maíz",
+          "frijoles refritos",
+          "aguacate",
+          "pico de gallo",
+          "cereal",
+          "fruta",
+          "café",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "bistec de res a la mexicana",
+          "arroz rojo",
+          "frijoles de la olla",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "hot dog",
+          "espagueti rojo",
+          "jitomate",
+          "cebolla",
+          "mayonesa",
+          "cátsup",
+          "chiles en escabeche picados",
+          "papas Paps",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-10",
       "fechaLabel": "Martes 10 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DfjXScTRHp4/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["enchiladas potosinas", "lechuga", "crema", "queso", "aguacate", "frijoles refritos", "doraditas", "yogur", "té", "café"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["suadero en salsa verde con nopales", "arroz rojo", "frijoles", "fruta en almíbar", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["canelones de jamón y queso", "macarrones rojos", "crema de chipotle", "frijoles refritos", "yogur", "pan dulce surtido", "café", "malteada de fresa"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "enchiladas potosinas",
+          "lechuga",
+          "crema",
+          "queso",
+          "aguacate",
+          "frijoles refritos",
+          "doraditas",
+          "yogur",
+          "té",
+          "café"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "suadero en salsa verde con nopales",
+          "arroz rojo",
+          "frijoles",
+          "fruta en almíbar",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "canelones de jamón y queso",
+          "macarrones rojos",
+          "crema de chipotle",
+          "frijoles refritos",
+          "yogur",
+          "pan dulce surtido",
+          "café",
+          "malteada de fresa"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-11",
       "fechaLabel": "Miércoles 11 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Dfl5vtCxNbd/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["chilorio estilo Sinaloa", "cilantro", "cebolla", "limón", "frijoles refritos", "tortilla", "plátanos con crema", "café", "té"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["cerdo en mole verde con calabaza", "arroz blanco", "frijoles de la olla", "cacahuates estilo Hotnuts", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["hamburguesa vegetariana con queso", "cebolla", "jitomate", "lechuga", "jalapeños", "mayonesa", "cátsup", "mostaza", "fruta", "papas a la francesa", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "chilorio estilo Sinaloa",
+          "cilantro",
+          "cebolla",
+          "limón",
+          "frijoles refritos",
+          "tortilla",
+          "plátanos con crema",
+          "café",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "cerdo en mole verde con calabaza",
+          "arroz blanco",
+          "frijoles de la olla",
+          "cacahuates estilo Hotnuts",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "hamburguesa vegetariana con queso",
+          "cebolla",
+          "jitomate",
+          "lechuga",
+          "jalapeños",
+          "mayonesa",
+          "cátsup",
+          "mostaza",
+          "fruta",
+          "papas a la francesa",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-12",
       "fechaLabel": "Jueves 12 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DfoTMf6R2nD/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["chilaquiles de mole con pollo", "queso", "crema", "frijoles refritos", "baguette", "cereal", "fruta", "café", "leche"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["milanesa de res", "espagueti blanco", "ensalada de lechuga y pepino", "limón", "salsa verde", "frijoles refritos", "mini runners", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["fajitas de pollo con papas y calabaza", "tortilla", "frijoles de la olla", "fruta", "cereal", "té", "leche"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "chilaquiles de mole con pollo",
+          "queso",
+          "crema",
+          "frijoles refritos",
+          "baguette",
+          "cereal",
+          "fruta",
+          "café",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "milanesa de res",
+          "espagueti blanco",
+          "ensalada de lechuga y pepino",
+          "limón",
+          "salsa verde",
+          "frijoles refritos",
+          "mini runners",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "fajitas de pollo con papas y calabaza",
+          "tortilla",
+          "frijoles de la olla",
+          "fruta",
+          "cereal",
+          "té",
+          "leche"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-13",
       "fechaLabel": "Viernes 13 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Dfq0nEwRb4u/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["huevo con jamón", "frijoles refritos", "salsa roja", "tortilla", "Bran Frut", "café con leche", "té"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["pollo en adobo con papas", "arroz blanco", "frijoles guisados", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["enfrijoladas veracruzanas", "sopa de pasta", "queso", "crema", "lechuga", "aguacate", "yogurt", "té", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "huevo con jamón",
+          "frijoles refritos",
+          "salsa roja",
+          "tortilla",
+          "Bran Frut",
+          "café con leche",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "pollo en adobo con papas",
+          "arroz blanco",
+          "frijoles guisados",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "enfrijoladas veracruzanas",
+          "sopa de pasta",
+          "queso",
+          "crema",
+          "lechuga",
+          "aguacate",
+          "yogurt",
+          "té",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-14",
       "fechaLabel": "Sábado 14 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Dft1oYDxW5g/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["croissant con ensalada rusa y pollo", "aguacate", "chiles en vinagre", "frijoles refritos", "cereal", "fruta", "leche", "té"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["carne campechana con nopales", "arroz blanco", "cilantro", "cebolla", "pepino rebanado", "limón", "salsa roja", "frijoles refritos", "chamoyada", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["pizza", "totopos", "frijoles refritos", "salsa Valentina", "catsup", "fruta", "café con leche", "agua de sabor"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "croissant con ensalada rusa y pollo",
+          "aguacate",
+          "chiles en vinagre",
+          "frijoles refritos",
+          "cereal",
+          "fruta",
+          "leche",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "carne campechana con nopales",
+          "arroz blanco",
+          "cilantro",
+          "cebolla",
+          "pepino rebanado",
+          "limón",
+          "salsa roja",
+          "frijoles refritos",
+          "chamoyada",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "pizza",
+          "totopos",
+          "frijoles refritos",
+          "salsa Valentina",
+          "catsup",
+          "fruta",
+          "café con leche",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-15",
       "fechaLabel": "Domingo 15 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DfwTAvNRZpH/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["hot cakes de avena con arándanos", "totopos", "frijoles refritos", "jarabe de maple", "yogurt", "fruta", "té", "café con leche"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["chuleta de cerdo en crema poblana", "arroz rojo", "frijoles refritos", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["sopa azteca con bistec", "frijoles de la olla", "queso", "crema", "aguacate", "yogurt", "granola", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "hot cakes de avena con arándanos",
+          "totopos",
+          "frijoles refritos",
+          "jarabe de maple",
+          "yogurt",
+          "fruta",
+          "té",
+          "café con leche"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "chuleta de cerdo en crema poblana",
+          "arroz rojo",
+          "frijoles refritos",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "sopa azteca con bistec",
+          "frijoles de la olla",
+          "queso",
+          "crema",
+          "aguacate",
+          "yogurt",
+          "granola",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-16",
       "fechaLabel": "Lunes 16 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DfyuOSQxxze/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["tortitas campiranas en jitomate", "chiles en vinagre", "frijoles de la olla", "tortilla", "pan dulce", "café con leche", "té"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["cerdo con chilacayotes en pipián", "arroz rojo", "frijoles de olla", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["choriqueso", "tortilla", "pepinos rebanados", "frijoles refritos", "salsa verde", "mini paleta payaso", "fruta", "café", "té helado"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "tortitas campiranas en jitomate",
+          "chiles en vinagre",
+          "frijoles de la olla",
+          "tortilla",
+          "pan dulce",
+          "café con leche",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "cerdo con chilacayotes en pipián",
+          "arroz rojo",
+          "frijoles de olla",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "choriqueso",
+          "tortilla",
+          "pepinos rebanados",
+          "frijoles refritos",
+          "salsa verde",
+          "mini paleta payaso",
+          "fruta",
+          "café",
+          "té helado"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-17",
       "fechaLabel": "Martes 17 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Df1fsuPRqvQ/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["chilaquiles verdes con pollo", "queso", "crema", "frijoles refritos", "baguette", "yogurt", "fruta", "café", "malteada de chocolate"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["cecina adobada", "arroz rojo", "guacamole", "limón", "ensalada de nopales", "frijoles guisados", "pelón pelo rico", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["sincronizadas de tortilla de harina", "sopa de pasta", "pico de gallo", "frijoles rancheros", "aguacate", "gelatina de leche", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "chilaquiles verdes con pollo",
+          "queso",
+          "crema",
+          "frijoles refritos",
+          "baguette",
+          "yogurt",
+          "fruta",
+          "café",
+          "malteada de chocolate"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "cecina adobada",
+          "arroz rojo",
+          "guacamole",
+          "limón",
+          "ensalada de nopales",
+          "frijoles guisados",
+          "pelón pelo rico",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "sincronizadas de tortilla de harina",
+          "sopa de pasta",
+          "pico de gallo",
+          "frijoles rancheros",
+          "aguacate",
+          "gelatina de leche",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-18",
       "fechaLabel": "Miércoles 18 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Df3rfQcxYKA/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["huevo revuelto con tocino", "frijoles refritos", "salsa chipotle", "tortilla", "cereal", "Bubulubu", "café", "leche"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["res con calabacita en salsa de morita", "arroz rojo", "frijoles guisados", "fruta", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["suadero con papa", "tortilla", "cebolla", "cilantro", "limón", "ensalada de lechuga", "pepino", "salsa roja", "plátanos con crema", "té", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "huevo revuelto con tocino",
+          "frijoles refritos",
+          "salsa chipotle",
+          "tortilla",
+          "cereal",
+          "Bubulubu",
+          "café",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "res con calabacita en salsa de morita",
+          "arroz rojo",
+          "frijoles guisados",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "suadero con papa",
+          "tortilla",
+          "cebolla",
+          "cilantro",
+          "limón",
+          "ensalada de lechuga",
+          "pepino",
+          "salsa roja",
+          "plátanos con crema",
+          "té",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-19",
       "fechaLabel": "Jueves 19 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Df6QcnnxhLu/",
-      "desayuno": {"horario": "06:50 – 09:00", "items": ["picadillo de res", "frijoles guisados", "chiles curados", "tortilla", "cereal", "té", "leche"]},
-      "comida": {"horario": "12:00 – 15:00", "items": ["pechuga a la plancha", "espagueti rojo", "ensalada de lechuga, jitomate y pepino", "guacamole", "limón", "frijoles refritos", "paleta de yogur", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 20:00", "items": ["burritos estilo Tijuana", "frijoles molidos", "salsa roja de morita", "aguacate", "fruta", "arroz con leche", "café", "agua de sabor"]}
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "picadillo de res",
+          "frijoles guisados",
+          "chiles curados",
+          "tortilla",
+          "cereal",
+          "té",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "pechuga a la plancha",
+          "espagueti rojo",
+          "ensalada de lechuga, jitomate y pepino",
+          "guacamole",
+          "limón",
+          "frijoles refritos",
+          "paleta de yogur",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "burritos estilo Tijuana",
+          "frijoles molidos",
+          "salsa roja de morita",
+          "aguacate",
+          "fruta",
+          "arroz con leche",
+          "café",
+          "agua de sabor"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-20",
       "fechaLabel": "Viernes 20 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/Df9ufRuxEW-/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["marinas de mole", "frijoles refritos", "totopos", "granola", "fruta", "yogurt", "café", "atole de fresa"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["cerdo en salsa de chipotle", "espagueti verde", "frijoles de olla", "verduras al vapor", "mini chocorrol", "tortilla", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["gringa de pastor", "frijoles puercos", "salsa verde", "cebolla", "cilantro", "fruta", "yogurt", "té"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "marinas de mole",
+          "frijoles refritos",
+          "totopos",
+          "granola",
+          "fruta",
+          "yogurt",
+          "café",
+          "atole de fresa"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "cerdo en salsa de chipotle",
+          "espagueti verde",
+          "frijoles de olla",
+          "verduras al vapor",
+          "mini chocorrol",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "gringa de pastor",
+          "frijoles puercos",
+          "salsa verde",
+          "cebolla",
+          "cilantro",
+          "fruta",
+          "yogurt",
+          "té"
+        ]
+      }
     },
     {
       "menuDate": "2026-11-21",
       "fechaLabel": "Sábado 21 de noviembre de 2026",
       "postUrl": "https://www.instagram.com/p/DgAVs8gxdOW/",
-      "desayuno": {"horario": "08:00 – 09:30", "items": ["enchiladas suizas rojas", "queso manchego rallado", "lechuga", "crema", "frijoles refritos", "mantecadas", "yogurt", "té", "licuado de plátano"]},
-      "comida": {"horario": "13:15 – 15:00", "items": ["tinga de res", "arroz blanco", "lechuga", "queso", "crema", "frijoles refritos", "fruta", "tostada", "agua de sabor"]},
-      "cena": {"horario": "18:00 – 19:30", "items": ["memelas campechanas", "frijoles rancheros", "ensalada de nopales", "queso", "crema", "salsa verde", "cereal", "fruta", "café", "leche"]}
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "enchiladas suizas rojas",
+          "queso manchego rallado",
+          "lechuga",
+          "crema",
+          "frijoles refritos",
+          "mantecadas",
+          "yogurt",
+          "té",
+          "licuado de plátano"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "tinga de res",
+          "arroz blanco",
+          "lechuga",
+          "queso",
+          "crema",
+          "frijoles refritos",
+          "fruta",
+          "tostada",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "memelas campechanas",
+          "frijoles rancheros",
+          "ensalada de nopales",
+          "queso",
+          "crema",
+          "salsa verde",
+          "cereal",
+          "fruta",
+          "café",
+          "leche"
+        ]
+      }
     }
   ]
 }
