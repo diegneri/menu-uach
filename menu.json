@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-22 11:33 America/Mexico_City",
-  "lastCheckedAt": "2026-11-22T12:50:49.197Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-23 01:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-23T06:50:56.600Z",
+  "lastStatus": "ok",
+  "lastMessage": "Menú nuevo del lunes 23 de noviembre de 2026",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -716,6 +716,49 @@
           "fruta",
           "leche",
           "café"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-23",
+      "fechaLabel": "Lunes 23 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgEsDwMxVk4/",
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "molletes de jamón con queso",
+          "aguacate",
+          "pico de gallo",
+          "fruta",
+          "cereal",
+          "té",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "cerdo en salsa de tamarindo",
+          "pasta de codito blanco",
+          "ensalada de habanero, cebolla y limón",
+          "puré de papa",
+          "gomitas enchiladas",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "quesadillas poblanas",
+          "espagueti rojo",
+          "frijoles refritos",
+          "salsa roja",
+          "lechuga",
+          "canelitas",
+          "yogurt",
+          "café",
+          "agua de sabor"
         ]
       }
     }
