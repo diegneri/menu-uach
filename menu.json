@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-23 12:20 America/Mexico_City",
-  "lastCheckedAt": "2026-11-23T17:50:54.607Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-24 05:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-24T10:50:27.802Z",
+  "lastStatus": "ok",
+  "lastMessage": "Menú nuevo del martes 24 de noviembre de 2026",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -759,6 +759,52 @@
           "yogurt",
           "café",
           "agua de sabor"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-24",
+      "fechaLabel": "Martes 24 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgHvGjPBndu/",
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "chalupas de pollo",
+          "queso",
+          "crema",
+          "lechuga",
+          "salsa roja",
+          "frijoles refritos",
+          "yogur",
+          "granola",
+          "té",
+          "café"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "res en salsa pasilla con papas",
+          "arroz blanco",
+          "sopa de lentejas",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "enchiladas tamaulipecas",
+          "macarrones rojos",
+          "queso",
+          "crema",
+          "lechuga",
+          "frijoles refritos",
+          "pan dulce",
+          "fruta",
+          "malteada de vainilla",
+          "café"
         ]
       }
     }
