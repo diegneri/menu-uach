@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-25 01:20 America/Mexico_City",
-  "lastCheckedAt": "2026-11-25T06:50:44.530Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos. Hay una publicación del menú del miércoles 25 de noviembre de 2026 (post 18118724429621494), pero Instagram no devolvió el contenido de la imagen (narrativa no disponible en dos intentos), así que no se pudo verificar ni extraer; se reintentará en la próxima revisión.",
+  "updatedAt": "2026-11-25 05:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-25T10:50:25.991Z",
+  "lastStatus": "ok",
+  "lastMessage": "Menú nuevo del 25 de noviembre de 2026 guardado.",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -805,6 +805,47 @@
           "fruta",
           "malteada de vainilla",
           "café"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-25",
+      "fechaLabel": "Miércoles 25 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgJ7Jg9hwON/",
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "chorizo con nopales",
+          "salsa verde",
+          "frijoles de la olla",
+          "tortilla",
+          "cereal",
+          "fruta",
+          "té",
+          "leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "mixiote de pollo",
+          "arroz blanco",
+          "frijoles de la olla",
+          "mini takis",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "pastel de carne molida de res con zanahoria",
+          "tortilla",
+          "frijoles refritos",
+          "chiles curados",
+          "arroz con leche",
+          "café",
+          "agua de sabor"
         ]
       }
     }
