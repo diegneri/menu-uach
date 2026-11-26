@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-25 07:21 America/Mexico_City",
-  "lastCheckedAt": "2026-11-25T12:50:38.796Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-26 00:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-26T05:50:57.069Z",
+  "lastStatus": "ok",
+  "lastMessage": "Menú nuevo: jueves 26 de noviembre de 2026.",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -846,6 +846,51 @@
           "arroz con leche",
           "café",
           "agua de sabor"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-26",
+      "fechaLabel": "Jueves 26 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgMRbsHRMT0/",
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "omelette de espinaca y queso",
+          "salsa roja de morita",
+          "frijoles rancheros",
+          "tortilla",
+          "barras Marinela",
+          "té",
+          "café"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "mole de olla verde",
+          "arroz rojo",
+          "cilantro",
+          "cebolla",
+          "chile picado",
+          "limón",
+          "frijoles de la olla",
+          "fruta",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "pierna hawaiana",
+          "espagueti blanco",
+          "tortilla",
+          "salsa roja de chipotle",
+          "cereal",
+          "fruta",
+          "café",
+          "leche"
         ]
       }
     }
