@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-26 01:20 America/Mexico_City",
-  "lastCheckedAt": "2026-11-26T06:50:34.661Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-27 00:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-27T05:50:41.218Z",
+  "lastStatus": "ok",
+  "lastMessage": "Se guardaron 1 menú(s).",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -890,6 +890,51 @@
           "cereal",
           "fruta",
           "café",
+          "leche"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-27",
+      "fechaLabel": "Viernes 27 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgO6MlDhUFY/",
+      "desayuno": {
+        "horario": "06:50 – 09:00",
+        "items": [
+          "hot cakes de chocolate",
+          "frijoles refritos",
+          "totopos",
+          "mermelada",
+          "chispas de chocolate",
+          "yogur",
+          "fruta",
+          "té",
+          "café con leche"
+        ]
+      },
+      "comida": {
+        "horario": "12:00 – 15:00",
+        "items": [
+          "cerdo en crema poblana con rajas",
+          "sopa de pasta",
+          "frijoles guisados",
+          "pulparindo",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 20:00",
+        "items": [
+          "volován hawaiano",
+          "macarrones de codito rojos",
+          "salsa Valentina",
+          "ketchup",
+          "frijoles refritos",
+          "totopos",
+          "cereal",
+          "fruta",
+          "té",
           "leche"
         ]
       }
