@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-27 01:20 America/Mexico_City",
-  "lastCheckedAt": "2026-11-27T06:51:03.381Z",
-  "lastStatus": "sin_cambios",
-  "lastMessage": "Sin menús nuevos",
+  "updatedAt": "2026-11-28 01:20 America/Mexico_City",
+  "lastCheckedAt": "2026-11-28T06:51:14.852Z",
+  "lastStatus": "ok",
+  "lastMessage": "Se guardaron 1 menú(s).",
   "source": "https://www.instagram.com/comisiondealimentacionuach",
   "menus": [
     {
@@ -936,6 +936,56 @@
           "fruta",
           "té",
           "leche"
+        ]
+      }
+    },
+    {
+      "menuDate": "2026-11-28",
+      "fechaLabel": "Sábado 28 de noviembre de 2026",
+      "postUrl": "https://www.instagram.com/p/DgRlxlsBmFm/",
+      "desayuno": {
+        "horario": "08:00 – 09:30",
+        "items": [
+          "chilaquiles en chile morita con pollo",
+          "queso",
+          "crema",
+          "frijoles refritos",
+          "baguette",
+          "yogurt",
+          "granola",
+          "café",
+          "té"
+        ]
+      },
+      "comida": {
+        "horario": "13:15 – 15:00",
+        "items": [
+          "suadero con nopales",
+          "arroz rojo",
+          "cebolla",
+          "cilantro",
+          "salsa roja",
+          "limón",
+          "frijoles de la olla",
+          "yogurt congelado",
+          "tortilla",
+          "agua de sabor"
+        ]
+      },
+      "cena": {
+        "horario": "18:00 – 19:30",
+        "items": [
+          "alambre de res",
+          "tortilla",
+          "salsa roja",
+          "cilantro",
+          "cebolla",
+          "limón",
+          "frijoles refritos",
+          "mazapán",
+          "yogurt",
+          "café",
+          "agua de sabor"
         ]
       }
     }
